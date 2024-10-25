@@ -1,5 +1,7 @@
 package com.example.lab8;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -28,5 +30,17 @@ public class CustomListTest {
         int listSize = list.getCount();
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(), listSize + 1);
+    }
+
+    /**
+     * test the hasCity method (failing test)
+     * verifies if a city is in the list
+     */
+    @Test
+    public void hasCityTest() {
+        City city = new City("Estevan", "SK");
+        assertFalse(list.hasCity(city));  // The list doesn't have the city yet
+        list.addCity(city);
+        assertTrue(list.hasCity(city));   // Now the city should be in the list
     }
 }

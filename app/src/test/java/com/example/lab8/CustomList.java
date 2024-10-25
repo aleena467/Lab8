@@ -24,4 +24,6 @@ public class CustomList {
     public void addCity(City city) {
         cities.add(city);
     }
+
+    // No hasCity method implemented yet (causing the test to fail)
 }
