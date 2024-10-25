@@ -10,14 +10,6 @@ public class CustomList {
     }
 
     /**
-     * This gets the size of the list
-     * @return the size of the list
-     */
-    public int getCount() {
-        return cities.size();
-    }
-
-    /**
      * This adds a city object to the list
      * @param city the city to add
      */
@@ -34,8 +26,13 @@ public class CustomList {
         return cities.contains(city);
     }
 
+    /**
+     * This removes a city from the list
+     * @param city the city to remove
+     */
     public void deleteCity(City city) {
         cities.remove(city);
     }
+
 
 }

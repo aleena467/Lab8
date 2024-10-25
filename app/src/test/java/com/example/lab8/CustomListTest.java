@@ -45,7 +45,7 @@ public class CustomListTest {
     }
 
     /**
-     * Test the deleteCity method (failing test)
+     * Test the deleteCity method
      * Verifies if a city can be removed from the list
      */
     @Test
@@ -55,5 +55,18 @@ public class CustomListTest {
         assertTrue(list.hasCity(city));    // Verify the city was added
         list.deleteCity(city);             // Attempt to delete the city
         assertFalse(list.hasCity(city));   // Verify the city was removed
+    }
+
+    /**
+     * Test the countCities method (failing test)
+     * Verifies the number of cities in the list
+     */
+    @Test
+    public void countCitiesTest() {
+        assertEquals(0, list.getCount());  // Initially, the list is empty
+        list.addCity(new City("Estevan", "SK"));
+        assertEquals(1, list.getCount());  // After adding one city
+        list.addCity(new City("Regina", "SK"));
+        assertEquals(2, list.getCount());  // After adding another city
     }
 }
