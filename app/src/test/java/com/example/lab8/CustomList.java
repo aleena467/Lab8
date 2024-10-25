@@ -35,7 +35,7 @@ public class CustomList {
     }
 
     public void deleteCity(City city) {
-
+        cities.remove(city);
     }
 
 }
