@@ -34,5 +34,12 @@ public class CustomList {
         cities.remove(city);
     }
 
+    /**
+     * This gets the size of the list
+     * @return the size of the list
+     */
+    public int getCount() {
+        return cities.size();
+    }
 
 }
