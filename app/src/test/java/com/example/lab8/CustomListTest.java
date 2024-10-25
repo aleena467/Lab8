@@ -13,7 +13,7 @@ public class CustomListTest {
     private CustomList list;
 
     /**
-     * create a mock list for testing
+     * Create a mock list for testing
      * @return a new CustomList instance
      */
     @BeforeEach
@@ -22,8 +22,8 @@ public class CustomListTest {
     }
 
     /**
-     * test the addCity method
-     * verifies that the list size increases by one when a city is added
+     * Test the addCity method
+     * Verifies that the list size increases by one when a city is added
      */
     @Test
     public void addCityTest() {
@@ -33,8 +33,8 @@ public class CustomListTest {
     }
 
     /**
-     * test the hasCity method (failing test)
-     * verifies if a city is in the list
+     * Test the hasCity method
+     * Verifies if a city is in the list
      */
     @Test
     public void hasCityTest() {

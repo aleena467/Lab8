@@ -10,7 +10,7 @@ public class CustomList {
     }
 
     /**
-     * this gets size of the list
+     * This gets the size of the list
      * @return the size of the list
      */
     public int getCount() {
@@ -18,12 +18,19 @@ public class CustomList {
     }
 
     /**
-     * this adds a city object to the list
+     * This adds a city object to the list
      * @param city the city to add
      */
     public void addCity(City city) {
         cities.add(city);
     }
 
-    // No hasCity method implemented yet (causing the test to fail)
+    /**
+     * This checks if a city exists in the list
+     * @param city the city to check
+     * @return true if the city is in the list, false otherwise
+     */
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
 }
