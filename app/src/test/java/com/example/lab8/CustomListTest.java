@@ -43,4 +43,17 @@ public class CustomListTest {
         list.addCity(city);
         assertTrue(list.hasCity(city));   // Now the city should be in the list
     }
+
+    /**
+     * Test the deleteCity method (failing test)
+     * Verifies if a city can be removed from the list
+     */
+    @Test
+    public void deleteCityTest() {
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));    // Verify the city was added
+        list.deleteCity(city);             // Attempt to delete the city
+        assertFalse(list.hasCity(city));   // Verify the city was removed
+    }
 }
